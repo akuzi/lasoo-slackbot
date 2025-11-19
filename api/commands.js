@@ -14,7 +14,7 @@ function verifySlackRequest(req) {
   if (Math.abs(currentTime - parseInt(timestamp)) > 300) {
     return false;
   }
-  
+
   const sigBasestring = `v0:${timestamp}:${body}`;
   const mySignature = 'v0=' + createHmac('sha256', process.env.SLACK_SIGNING_SECRET)
     .update(sigBasestring)

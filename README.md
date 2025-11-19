@@ -11,6 +11,7 @@ A basic Slack bot built with Node.js and deployable to Vercel.
 
 ## Prerequisites
 
+
 - Node.js 18+ installed
 - A Slack app created at [api.slack.com](https://api.slack.com/apps)
 - A Vercel account (free tier works)

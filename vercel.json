@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/events",
+      "dest": "/api/events.js"
+    },
+    {
+      "src": "/api/commands",
+      "dest": "/api/commands.js"
+    },
+    {
+      "src": "/api/interactions",
+      "dest": "/api/interactions.js"
+    }
+  ],
+  "env": {
+    "SLACK_BOT_TOKEN": "@slack_bot_token",
+    "SLACK_SIGNING_SECRET": "@slack_signing_secret"
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "name": "lasoo-slackbot",
+  "version": "1.0.0",
+  "description": "A Slack bot deployable to Vercel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.17.1"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.7"
+  }
+}
+

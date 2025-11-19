@@ -8,8 +8,7 @@ function verifySlackRequest(req) {
   const signature = req.headers['x-slack-signature'];
   const timestamp = req.headers['x-slack-request-timestamp'];
   const body = req.body || '';
-  
-  
+
   // Prevent replay attacks (check if request is older than 5 minutes)
   const currentTime = Math.floor(Date.now() / 1000);
   if (Math.abs(currentTime - parseInt(timestamp)) > 300) {

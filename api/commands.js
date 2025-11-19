@@ -25,6 +25,7 @@ function verifySlackRequest(req) {
     .digest('hex') === signature.split('=')[1];
 }
 
+
 // Parse URL-encoded form data
 function parseFormData(body) {
   const params = new URLSearchParams(body);

@@ -16,13 +16,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^3.17.1",
-    "@slack/events-api": "^3.17.1",
-    "@slack/web-api": "^7.17.1",
-    "crypto": "^1.0.1"
+    "@slack/bolt": "^3.17.1"
   },
   "devDependencies": {
     "@vercel/node": "^3.0.7"
   }
 }
-

@@ -6,6 +6,11 @@ module.exports = async (req, res) => {
   }
 
   try {
+    // Ensure req has url property that Bolt expects
+    if (!req.url) {
+      req.url = req.path || req.originalUrl || '/';
+    }
+    
     // Use Bolt's receiver to handle the request
     await app.receiver.requestListener()(req, res);
   } catch (error) {
